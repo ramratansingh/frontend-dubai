@@ -1,0 +1,215 @@
+// Import variables
+@import "../../theme/variables.scss";
+
+ion-header{
+    background-color: $primary-color;
+    z-index: unset;
+}
+
+ion-content{
+    --background: #AB95F9;
+}
+
+ion-toolbar{
+    padding: $zero $sixfour !important;
+}
+
+ion-title{
+    color : $white-color;
+    font-size: $base-font-size;
+}
+
+.header-md{
+    box-shadow: unset !important;
+}
+
+#container{
+    font-family: $nunito;
+    padding: $hundred $zero;
+    background-color: $second-color !important;
+    background: url('../../assets/subscription_banner.png') no-repeat center center;
+    background-size: cover; 
+    height: auto;
+    ion-grid{
+        width: $width_700;
+        .form_left{
+            background-color: $white-color;
+            padding: $zero $ten;
+            height: $height_900;
+            .main_title{
+                font-weight: $font-weight-700;
+                font-size: $font-size-24;
+                line-height: $line-height-32;
+            }
+            .sub_title{
+                font-weight: $font-weight-400;
+                font-size: $base-font-size;
+                line-height: $line-height-24;
+            }
+            .contact_info{
+                font-weight: $font-weight-700;
+                font-size: $font-size-20;
+                line-height: $line-height-32; 
+            }
+            ion-label{
+                font-weight: $font-weight-500;
+                font-size: $font-size-14;
+                line-height: $line-height-20;  
+                padding-bottom: $ten;
+                color : $dark-color;
+            }
+            input,.sel_input{
+                border: 1px solid #D0D5DD;
+                padding: $ten $fourteen;
+                font-weight: $font-weight-400;
+                font-size: $base-font-size;
+                line-height: $line-height-24;
+                border-radius: $eight;
+            }
+            .name_input::placeholder,option{
+                color: #98A2B3;
+            }
+            .full-width{
+                width: $hundred_perct;
+            }
+            .email_input::placeholder{
+                color: #98A2B3;
+            }
+            .input-with-image {
+                position: relative;
+            }
+            .input-with-image input[type="text"] {
+                padding-right: 30px;
+            }
+            .icon_input::placeholder{
+                color: #202124;
+            }
+            .input-with-image img {
+                position: absolute;
+                top: 40%;
+                right: 10px; 
+                transform: translateY(-50%);
+                width: $thirteen; 
+                height: $thirteen; 
+            }
+            ul{
+                list-style: none;
+                display: flex;
+                li{
+                    border-radius: $fourtyeight;
+                    border: 1px solid #E1E3E6;
+                    padding: $two $ten;
+                    margin: $one;
+                    &:last-child{
+                        border:1px solid #6633FF;
+                        color: #6633FF;
+                    }
+                }
+            }
+            .payment_btn{
+                color: #896AF9;
+                background-color: $white-color;
+                font-weight: $font-weight-900;
+                font-size: $font-size-23;
+                line-height: $line-height-38;
+                border-radius: $sixteen;
+                padding: $eight $twentyseven;
+                border-radius: 1px solid #896AF9;
+                box-shadow: 4px 4px 0px -1px #896AF9;
+              }
+        }
+        .form_right{
+            background-color: $light-purple-color;
+            color: #202124;
+            .main_title{
+                font-weight: $font-weight-700;
+                font-size: $font-size-20;
+                line-height: $line-height-24;
+            }
+            .sub_title{
+                font-weight: $font-weight-400;
+                font-size: $font-size-14;
+                line-height: $line-height-20;
+            }
+            .mystery_box{
+                border-radius: $eight;
+                padding: $sixteen;
+                background-color: $white-color;
+                h5{
+                    font-weight: $font-weight-700;
+                    font-size: $base-font-size;
+                    line-height: $line-height-24;
+                    color: #202124;
+                }
+                h6{
+                    font-weight: $font-weight-400;
+                    font-size: $font-size-12;
+                    line-height: $line-height-16;
+                    color: #838383;
+                }
+            }
+            .order_summary{
+                h5{
+                    font-weight: $font-weight-400;
+                    font-size: $font-size-14;
+                    line-height: $line-height-21;
+                    color: $black-color;
+                }
+                h6{
+                    font-weight: $font-weight-400;
+                    font-size: $base-font-size;
+                    line-height: $line-height-24;
+                    color: #202124;
+                    b{
+                        font-weight: $font-weight-700;
+                    }
+                }
+                .free{
+                    font-weight: $font-weight-400;
+                    font-size: $font-size-14;
+                    line-height: $line-height-21;
+                    color: #707070;
+                }
+                .total{
+                    font-weight: $font-weight-600;
+                    font-size: $font-size-17;
+                    line-height: $line-height-26;
+                    color: #333333; 
+                }
+                .monthly{
+                    font-weight: $font-weight-400;
+                    font-size: $font-size-12;
+                    line-height: $line-height-16;
+                    color: #838383;
+                }
+            }
+        }
+    }
+}
+
+.footer{
+    background: $white-color;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%; 
+    padding: $fourtyeight $zero; 
+    box-sizing: border-box; 
+
+    .footer_content{
+      align-items: $text-center;
+      .footer_link{
+        list-style: none;
+        display: $flex;
+        padding: $zero;
+        li{
+          font-weight: $font-weight-600;
+          font-size: $base-font-size;
+          line-height: $line-height-24;
+          &:nth-child(2){
+            padding: $zero $twenty_px;
+          }
+        }
+      }
+    }
+}
