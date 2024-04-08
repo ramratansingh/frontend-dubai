@@ -13,6 +13,11 @@
 ion-header{
   background-color: $primary-color;
   z-index: unset;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999; 
 }
 
 ion-content{
@@ -128,11 +133,48 @@ ion-title{
         font-family: $nunito;
         font-size: $font-size-14;
         line-height: $line-height-21;
+        text-decoration: underline;
         &:nth-child(2){
           padding: $zero $twenty_px;
         }
       }
     }
+  }
+}
+
+
+/* CSS rules specific to mobile devices */
+@media only screen and (max-width: 768px) {
+  ion-toolbar{
+    padding: 0px 0px !important;
+  }
+  #container{
+    .placeholder_image{
+      max-width: -webkit-fill-available;
+    }
+    ion-row{
+      display: $block;
+    }
+    .discover {
+      background: unset;
+    }
+  }
+  .footer{
+    .footer_content{
+      display: $block;
+      .footer_link{
+        display: $block;
+        text-align: $text-left;
+        li{
+          &:nth-child(2){
+            padding: $zero $zero;
+          }
+        }
+      }
+      p{
+        text-align: $text-left;
+      }
+   }
   }
 }
 
